@@ -85,6 +85,7 @@ variable "resource_tags" {
     condition     = length(var.resource_tags["environment"]) <= 8 && length(regexall("[^a-zA-Z0-9-]", var.resource_tags["environment"])) == 0
     error_message = "The environment tag must be no more than 8 characters, and only contain letters, numbers, and hyphens."
   }
+  
 }
 
 
