@@ -5,7 +5,7 @@ terraform {
 
   /* Uncomment this block to use Terraform Cloud for this tutorial
   cloud {
-      organization = "organization-name"
+      organization = "testproj"
       workspaces {
         name = "learn-terraform-variables"
       }
